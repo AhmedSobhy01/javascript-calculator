@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="calculator__display">
+                <div data-prevoperand></div>
+                <div data-currentoperand></div>
+            </div>
+            <div class="calculator__keyboard">
+                <div class="calculator__numbers">
+                    <button type="button" data-keycode="27" data-keycode-alt="67" data-clear>AC</button>
+                    <button type="button" data-keycode="8" data-keycode-alt="46" data-del>Del</button>
+                    <button type="button" data-keycode="110" data-keycode-alt="190" data-number>.</button>
+                    <button type="button" data-keycode="96" data-keycode-alt="48" data-number>0</button>
+                    <button type="button" data-keycode="97" data-keycode-alt="49" data-number>1</button>
+                    <button type="button" data-keycode="98" data-keycode-alt="50" data-number>2</button>
+                    <button type="button" data-keycode="99" data-keycode-alt="51" data-number>3</button>
+                    <button type="button" data-keycode="100" data-keycode-alt="52" data-number>4</button>
+                    <button type="button" data-keycode="101" data-keycode-alt="53" data-number>5</button>
+                    <button type="button" data-keycode="102" data-keycode-alt="54" data-number>6</button>
+                    <button type="button" data-keycode="103" data-keycode-alt="55" data-number>7</button>
+                    <button type="button" data-keycode="104" data-keycode-alt="56" data-number>8</button>
+                    <button type="button" data-keycode="105" data-keycode-alt="57" data-number>9</button>
+                </div>
+                <div class="calculator__operators">
+                    <button type="button" data-keycode="111" data-operator>÷</button>
+                    <button type="button" data-keycode="106" data-keycode-alt="56" data-operator><span>×</span></button>
+                    <button type="button" data-keycode="109" data-keycode-alt="189" data-operator>-</button>
+                    <button type="button" data-keycode="107" data-keycode-alt="187" data-operator>+</button>
+                    <button type="button" data-keycode="13" data-equal>=</button>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
